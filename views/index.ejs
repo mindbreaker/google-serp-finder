@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src='http://code.jquery.com/jquery-1.8.3.min.js'></script>
+    <script src='/javascripts/app.js'></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p><%= description %></p>
+    <form method="post" action="/search">
+        <h2>Keyword</h2>
+        <input type="text" name="keyword" value="ruby" />
+        <h2>Domain</h2>
+        <input type="text" name="domain" value="http://www.wrel.de" />
+        <br />
+        <input type="submit" name="serp" value="Search" />
+    <div id="result"></div>
+    </form>
+  </body>
+</html>
